@@ -1,0 +1,5 @@
+docker-compose up -d 
+
+Login to minio - Create bucket name = datalake
+
+Start hive metastore again 

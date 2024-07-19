@@ -1,0 +1,38 @@
+[
+    {
+        "traceId": "abcd1234",
+        "spanId": "span5678",
+        "resourceMetrics": [
+            {
+                "resource": {
+                    "type": "service",
+                    "name": "my-service"
+                },
+                "metrics": [
+                    {
+                        "name": "http_requests_total",
+                        "value": 1024
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "traceId": "efgh5678",
+        "spanId": "span91011",
+        "resourceMetrics": [
+            {
+                "resource": {
+                    "type": "service",
+                    "name": "another-service"
+                },
+                "metrics": [
+                    {
+                        "name": "http_requests_total",
+                        "value": 2048
+                    }
+                ]
+            }
+        ]
+    }
+]
