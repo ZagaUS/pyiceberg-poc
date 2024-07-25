@@ -44,12 +44,11 @@ catalog.list_namespaces()
 
 def table_append():
     schema = Schema(
-        NestedField(
-            field_id=1,
-            name="tracedata",  
-            field_type=StringType(),
-            required=False
-        )
+        NestedField(field_id=1, name="tracedata", field_type=StringType(),required=False),
+        NestedField(field_id=1, name="servicename", field_type=StringType(), required=False),
+        NestedField(field_id=2, name="language", field_type=StringType(), required=False),
+        NestedField(field_id=4, name="createdTime", field_type=TimestampType(), required=False)
+
     )
 
 
