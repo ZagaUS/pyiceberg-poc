@@ -9,8 +9,8 @@ consumer = KafkaConsumer(
         auto_offset_reset='earliest',
         consumer_timeout_ms=10000,
         security_protocol='SSL',  # Add SSL configuration if needed
-        ssl_cafile='./telemetry_zagaopenshift.pem',
-        ssl_certfile='./telemetry_zagaopenshift.crt'
+        ssl_cafile='./python/trace_ingestion/telemetry_zagaopenshift.pem',
+        ssl_certfile='./python/trace_ingestion/telemetry_zagaopenshift.crt'
 )
 print("Kafka consumer created successfully.")
 
@@ -25,4 +25,6 @@ def consuming_message():
     finally:
         consumer.close()
         print("Message consumption completed.",messages)
-    return messages
+    return message
+
+consuming_message()
