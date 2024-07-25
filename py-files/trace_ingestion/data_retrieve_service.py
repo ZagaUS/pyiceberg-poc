@@ -15,6 +15,7 @@ def process_data(data):
             data = json.loads(data)
         
         for item in data:
+            print(len(item))
             for resource_span in item.get("resourceSpans", []):
                 for scope_span in resource_span.get("scopeSpans", []):
                     for span in scope_span.get("spans", []):

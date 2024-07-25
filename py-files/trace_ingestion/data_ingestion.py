@@ -63,7 +63,7 @@ def table_append():
 
 
     # Create a PyArrow Table with a single column containing the serialized data
-    df = pa.Table.from_pylist([{"tracedata": data} for data in serialized_data])
+    df = pa.Table.from_pylist([{"newone": data} for data in serialized_data])
 
     table.append(df)
     print("sucessfully appended")
