@@ -1,0 +1,531 @@
+[
+  {
+    "resourceSpans": [
+      {
+        "resource": {
+          "attributes": [
+            {
+              "key": "container.id",
+              "value": {
+                "stringValue": "053a98130d8d55abfc382c07a5236cdaca0802adfc7e13b9eaf8788315d15ba3"
+              }
+            },
+            {
+              "key": "host.arch",
+              "value": {
+                "stringValue": "amd64"
+              }
+            },
+            {
+              "key": "host.name",
+              "value": {
+                "stringValue": "order-srv-2-7748b65858-lps4j"
+              }
+            },
+            {
+              "key": "k8s.container.name",
+              "value": {
+                "stringValue": "order-srv-2"
+              }
+            },
+            {
+              "key": "k8s.deployment.name",
+              "value": {
+                "stringValue": "order-srv-2"
+              }
+            },
+            {
+              "key": "k8s.namespace.name",
+              "value": {
+                "stringValue": "observability-testcases"
+              }
+            },
+            {
+              "key": "k8s.node.name",
+              "value": {
+                "stringValue": "zagaocp-worker1"
+              }
+            },
+            {
+              "key": "k8s.pod.name",
+              "value": {
+                "stringValue": "order-srv-2-7748b65858-lps4j"
+              }
+            },
+            {
+              "key": "k8s.replicaset.name",
+              "value": {
+                "stringValue": "order-srv-2-7748b65858"
+              }
+            },
+            {
+              "key": "os.description",
+              "value": {
+                "stringValue": "Linux 5.14.0-284.71.1.el9_2.x86_64"
+              }
+            },
+            {
+              "key": "os.type",
+              "value": {
+                "stringValue": "linux"
+              }
+            },
+            {
+              "key": "process.command_args",
+              "value": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "stringValue": "/usr/lib/jvm/java-11-openjdk-11.0.18.0.10-2.el8_7.x86_64/bin/java"
+                    },
+                    {
+                      "stringValue": "-jar"
+                    },
+                    {
+                      "stringValue": "app.jar"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "key": "process.executable.path",
+              "value": {
+                "stringValue": "/usr/lib/jvm/java-11-openjdk-11.0.18.0.10-2.el8_7.x86_64/bin/java"
+              }
+            },
+            {
+              "key": "process.pid",
+              "value": {
+                "intValue": "1"
+              }
+            },
+            {
+              "key": "process.runtime.description",
+              "value": {
+                "stringValue": "Red Hat, Inc. OpenJDK 64-Bit Server VM 11.0.18+10-LTS"
+              }
+            },
+            {
+              "key": "process.runtime.name",
+              "value": {
+                "stringValue": "OpenJDK Runtime Environment"
+              }
+            },
+            {
+              "key": "process.runtime.version",
+              "value": {
+                "stringValue": "11.0.18+10-LTS"
+              }
+            },
+            {
+              "key": "service.instance.id",
+              "value": {
+                "stringValue": "observability-testcases.order-srv-2-7748b65858-lps4j.order-srv-2"
+              }
+            },
+            {
+              "key": "service.name",
+              "value": {
+                "stringValue": "order-srv-2"
+              }
+            },
+            {
+              "key": "service.version",
+              "value": {
+                "stringValue": "order-test-2"
+              }
+            },
+            {
+              "key": "telemetry.distro.name",
+              "value": {
+                "stringValue": "opentelemetry-java-instrumentation"
+              }
+            },
+            {
+              "key": "telemetry.distro.version",
+              "value": {
+                "stringValue": "2.6.0"
+              }
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "value": {
+                "stringValue": "java"
+              }
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "value": {
+                "stringValue": "opentelemetry"
+              }
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "value": {
+                "stringValue": "1.40.0"
+              }
+            }
+          ]
+        },
+        "scopeSpans": [
+          {
+            "scope": {
+              "name": "io.opentelemetry.tomcat-7.0",
+              "version": "2.6.0-alpha"
+            },
+            "spans": [
+              {
+                "traceId": "ebfbf9d3cba7e2951f330920b486af86",
+                "spanId": "acd8c938f78387ec",
+                "parentSpanId": "",
+                "flags": 257,
+                "name": "POST /orders/createErrorOrders",
+                "kind": 2,
+                "startTimeUnixNano": "1721714071097790000",
+                "endTimeUnixNano": "1721714071142954019",
+                "attributes": [
+                  {
+                    "key": "url.scheme",
+                    "value": {
+                      "stringValue": "http"
+                    }
+                  },
+                  {
+                    "key": "thread.name",
+                    "value": {
+                      "stringValue": "http-nio-5089-exec-2"
+                    }
+                  },
+                  {
+                    "key": "network.peer.port",
+                    "value": {
+                      "intValue": "39378"
+                    }
+                  },
+                  {
+                    "key": "user_agent.original",
+                    "value": {
+                      "stringValue": "PostmanRuntime/7.40.0"
+                    }
+                  },
+                  {
+                    "key": "network.protocol.version",
+                    "value": {
+                      "stringValue": "1.1"
+                    }
+                  },
+                  {
+                    "key": "thread.id",
+                    "value": {
+                      "intValue": "216"
+                    }
+                  },
+                  {
+                    "key": "http.response.status_code",
+                    "value": {
+                      "intValue": "200"
+                    }
+                  },
+                  {
+                    "key": "network.peer.address",
+                    "value": {
+                      "stringValue": "10.130.0.2"
+                    }
+                  },
+                  {
+                    "key": "server.address",
+                    "value": {
+                      "stringValue": "order-srv-2-observability-testcases.apps.zagaopenshift.zagaopensource.com"
+                    }
+                  },
+                  {
+                    "key": "client.address",
+                    "value": {
+                      "stringValue": "192.168.31.201"
+                    }
+                  },
+                  {
+                    "key": "url.path",
+                    "value": {
+                      "stringValue": "/orders/createErrorOrders"
+                    }
+                  },
+                  {
+                    "key": "http.request.method",
+                    "value": {
+                      "stringValue": "POST"
+                    }
+                  },
+                  {
+                    "key": "http.route",
+                    "value": {
+                      "stringValue": "/orders/createErrorOrders"
+                    }
+                  }
+                ],
+                "status": {}
+              }
+            ]
+          },
+          {
+            "scope": {
+              "name": "io.opentelemetry.jdbc",
+              "version": "2.6.0-alpha"
+            },
+            "spans": [
+              {
+                "traceId": "ebfbf9d3cba7e2951f330920b486af86",
+                "spanId": "9024fef6e94ad1f5",
+                "parentSpanId": "4e4b89ed0fb06996",
+                "flags": 257,
+                "name": "testcasesdb",
+                "kind": 3,
+                "startTimeUnixNano": "1721714071112524051",
+                "endTimeUnixNano": "1721714071117446801",
+                "attributes": [
+                  {
+                    "key": "thread.id",
+                    "value": {
+                      "intValue": "216"
+                    }
+                  },
+                  {
+                    "key": "thread.name",
+                    "value": {
+                      "stringValue": "http-nio-5089-exec-2"
+                    }
+                  },
+                  {
+                    "key": "db.name",
+                    "value": {
+                      "stringValue": "testcasesdb"
+                    }
+                  },
+                  {
+                    "key": "server.port",
+                    "value": {
+                      "intValue": "5432"
+                    }
+                  },
+                  {
+                    "key": "db.connection_string",
+                    "value": {
+                      "stringValue": "postgresql://postgresql-testcase-db.observability-testcases.svc.cluster.local:5432"
+                    }
+                  },
+                  {
+                    "key": "server.address",
+                    "value": {
+                      "stringValue": "postgresql-testcase-db.observability-testcases.svc.cluster.local"
+                    }
+                  },
+                  {
+                    "key": "db.user",
+                    "value": {
+                      "stringValue": "testcasesuser"
+                    }
+                  },
+                  {
+                    "key": "db.statement",
+                    "value": {}
+                  },
+                  {
+                    "key": "db.system",
+                    "value": {
+                      "stringValue": "postgresql"
+                    }
+                  }
+                ],
+                "status": {}
+              },
+              {
+                "traceId": "ebfbf9d3cba7e2951f330920b486af86",
+                "spanId": "819bb55ed4c66064",
+                "parentSpanId": "7bbbb49bae24f8a0",
+                "flags": 257,
+                "name": "SELECT testcasesdb.ocp_order_vendor",
+                "kind": 3,
+                "startTimeUnixNano": "1721714071120537359",
+                "endTimeUnixNano": "1721714071129927879",
+                "attributes": [
+                  {
+                    "key": "db.operation",
+                    "value": {
+                      "stringValue": "SELECT"
+                    }
+                  },
+                  {
+                    "key": "db.sql.table",
+                    "value": {
+                      "stringValue": "ocp_order_vendor"
+                    }
+                  },
+                  {
+                    "key": "thread.id",
+                    "value": {
+                      "intValue": "216"
+                    }
+                  },
+                  {
+                    "key": "thread.name",
+                    "value": {
+                      "stringValue": "http-nio-5089-exec-2"
+                    }
+                  },
+                  {
+                    "key": "db.name",
+                    "value": {
+                      "stringValue": "testcasesdb"
+                    }
+                  },
+                  {
+                    "key": "server.port",
+                    "value": {
+                      "intValue": "5432"
+                    }
+                  },
+                  {
+                    "key": "db.connection_string",
+                    "value": {
+                      "stringValue": "postgresql://postgresql-testcase-db.observability-testcases.svc.cluster.local:5432"
+                    }
+                  },
+                  {
+                    "key": "server.address",
+                    "value": {
+                      "stringValue": "postgresql-testcase-db.observability-testcases.svc.cluster.local"
+                    }
+                  },
+                  {
+                    "key": "db.user",
+                    "value": {
+                      "stringValue": "testcasesuser"
+                    }
+                  },
+                  {
+                    "key": "db.statement",
+                    "value": {
+                      "stringValue": "select orderentit0_.id as id1_0_0_, orderentit0_.customer_id as customer2_0_0_, orderentit0_.customer_name as customer3_0_0_, orderentit0_.customer_phone_number as customer4_0_0_, orderentit0_.model_no as model_no5_0_0_, orderentit0_.order_id as order_id6_0_0_, orderentit0_.product_address as product_7_0_0_, orderentit0_.product_id as product_8_0_0_, orderentit0_.product_name as product_9_0_0_, orderentit0_.quantity as quantit10_0_0_ from ocp_order_vendor orderentit0_ where orderentit0_.id=?"
+                    }
+                  },
+                  {
+                    "key": "db.system",
+                    "value": {
+                      "stringValue": "postgresql"
+                    }
+                  }
+                ],
+                "status": {}
+              }
+            ]
+          },
+          {
+            "scope": {
+              "name": "io.opentelemetry.hibernate-4.0",
+              "version": "2.6.0-alpha"
+            },
+            "spans": [
+              {
+                "traceId": "ebfbf9d3cba7e2951f330920b486af86",
+                "spanId": "7bbbb49bae24f8a0",
+                "parentSpanId": "4e4b89ed0fb06996",
+                "flags": 257,
+                "name": "Session.merge com.zaga.OrderProj.OrderEntity",
+                "kind": 1,
+                "startTimeUnixNano": "1721714071118811425",
+                "endTimeUnixNano": "1721714071132854759",
+                "attributes": [
+                  {
+                    "key": "thread.id",
+                    "value": {
+                      "intValue": "216"
+                    }
+                  },
+                  {
+                    "key": "thread.name",
+                    "value": {
+                      "stringValue": "http-nio-5089-exec-2"
+                    }
+                  }
+                ],
+                "status": {}
+              },
+              {
+                "traceId": "ebfbf9d3cba7e2951f330920b486af86",
+                "spanId": "686e109149f69fa8",
+                "parentSpanId": "4e4b89ed0fb06996",
+                "flags": 257,
+                "name": "Transaction.commit",
+                "kind": 1,
+                "startTimeUnixNano": "1721714071133543138",
+                "endTimeUnixNano": "1721714071136031361",
+                "attributes": [
+                  {
+                    "key": "thread.id",
+                    "value": {
+                      "intValue": "216"
+                    }
+                  },
+                  {
+                    "key": "thread.name",
+                    "value": {
+                      "stringValue": "http-nio-5089-exec-2"
+                    }
+                  }
+                ],
+                "status": {}
+              }
+            ]
+          },
+          {
+            "scope": {
+              "name": "io.opentelemetry.spring-data-1.8",
+              "version": "2.6.0-alpha"
+            },
+            "spans": [
+              {
+                "traceId": "ebfbf9d3cba7e2951f330920b486af86",
+                "spanId": "4e4b89ed0fb06996",
+                "parentSpanId": "acd8c938f78387ec",
+                "flags": 257,
+                "name": "OrderRepo.save",
+                "kind": 1,
+                "startTimeUnixNano": "1721714071108419414",
+                "endTimeUnixNano": "1721714071136504325",
+                "attributes": [
+                  {
+                    "key": "thread.id",
+                    "value": {
+                      "intValue": "216"
+                    }
+                  },
+                  {
+                    "key": "thread.name",
+                    "value": {
+                      "stringValue": "http-nio-5089-exec-2"
+                    }
+                  },
+                  {
+                    "key": "code.namespace",
+                    "value": {
+                      "stringValue": "com.zaga.OrderProj.OrderRepo"
+                    }
+                  },
+                  {
+                    "key": "code.function",
+                    "value": {
+                      "stringValue": "save"
+                    }
+                  }
+                ],
+                "status": {}
+              }
+            ]
+          }
+        ],
+        "schemaUrl": "https://opentelemetry.io/schemas/1.24.0"
+      }
+    ]
+  }
+]
